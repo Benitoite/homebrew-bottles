@@ -7,5 +7,5 @@ for B in $BOTTLES; do
   wget ${BASE_URL}/$B || exit 1
   ls -lh $B
   echo "brew reinstall --verbose -f $B"
-  brew reinstall --force-bottle --verbose -f $B || exit 1
+  brew reinstall --verbose -f $B || exit 1
 done
